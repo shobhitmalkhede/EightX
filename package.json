@@ -1,0 +1,26 @@
+{
+  "name": "clickup-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for ClickUp - Read/Create/Delete Tasks & Read Users",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "clickup-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "express": "^4.21.2",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
